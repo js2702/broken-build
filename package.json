@@ -1,0 +1,29 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "build-deps": "lerna run build --ignore react-bug-vite-app",
+    "bootstrap": "lerna bootstrap",
+    "setup-dev": "yarn && yarn bootstrap && yarn link-all && yarn build-deps",
+    "link-all": "lerna exec --parallel yarn link",
+    "unlink-all": "lerna exec --parallel --bail=false yarn unlink",
+    "start": "lerna run --scope react-bug-vite-app dev"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "@rollup/plugin-typescript": "^8.2.5",
+    "@types/react": "^17.0.18",
+    "postcss": "^8.4.12",
+    "react": "^17.0.2",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.56.2",
+    "rollup-plugin-dts": "^3.0.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "2.3.1",
+    "typescript": "^4.3.5"
+  }
+}

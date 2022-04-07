@@ -1,0 +1,20 @@
+{
+  "name": "react-transitive-lib-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "build": "npm run clean && rollup -c"
+  },
+  "keywords": [],
+  "peerDependencies": {
+    "react": "^17.0.2"
+  }
+}

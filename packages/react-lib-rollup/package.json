@@ -1,0 +1,25 @@
+{
+  "name": "react-lib-rollup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "build": "npm run clean && rollup -c"
+  },
+  "keywords": [],
+  "dependencies": {
+    "mdi-react": "^8.2.0",
+    "react-transitive-lib-1": "1.0.0",
+    "react-transitive-lib-2": "1.0.0"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2"
+  }
+}
