@@ -7,7 +7,7 @@
     "setup-dev": "yarn && yarn bootstrap && yarn link-all && yarn build-deps",
     "link-all": "lerna exec --parallel yarn link",
     "unlink-all": "lerna exec --parallel --bail=false yarn unlink",
-    "start": "lerna run --scope react-bug-vite-app dev"
+    "start": "lerna run --scope react-bug-vite-app dev --stream"
   },
   "devDependencies": {
     "lerna": "^4.0.0",
